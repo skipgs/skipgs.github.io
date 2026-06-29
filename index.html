@@ -3,184 +3,129 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="TODO: one-sentence paper description for SEO/social previews">
-  <meta property="og:title" content="TODO: Paper Title"/>
-  <meta property="og:description" content="TODO: one-sentence paper description"/>
-  <!-- <meta property="og:image" content="static/images/teaser.png"/> -->
+  <meta name="description" content="SkipGS: Post-Densification Backward Skipping for Efficient 3DGS Training">
+  <meta property="og:title" content="SkipGS: Post-Densification Backward Skipping for Efficient 3DGS Training"/>
+  <meta property="og:description" content="Coming soon."/>
 
-  <title>TODO: Paper Title</title>
+  <title>SkipGS</title>
 
-  <link rel="icon" href="static/images/favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Google Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .hero { flex: 1; }
+    .publication-title {
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .venue-tag {
+      display: inline-block;
+      background: #f5f5f5;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+      padding: 0.2rem 0.75rem;
+      font-size: 0.95rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+    .link-block {
+      margin: 0.25rem;
+    }
+    .link-block .button {
+      opacity: 0.45;
+      cursor: default;
+      pointer-events: none;
+    }
+    .coming-soon-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      padding: 0.55rem 2rem;
+      border-radius: 2rem;
+      margin-top: 2.5rem;
+    }
+    footer {
+      background: #fafafa;
+      border-top: 1px solid #ededed;
+    }
+    footer p {
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
 
-<section class="hero">
+<section class="hero is-white">
   <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">TODO: Paper Title</h1>
+    <div class="container is-max-desktop has-text-centered" style="padding-top: 4rem; padding-bottom: 3rem;">
 
-          <div class="is-size-5 publication-authors">
-            <!-- TODO: replace names + superscripts; use <sup> to mark affiliation / equal contribution -->
-            <span class="author-block"><a href="#">Author One</a><sup>1</sup>,</span>
-            <span class="author-block"><a href="#">Author Two</a><sup>1,2</sup>,</span>
-            <span class="author-block"><a href="#">Author Three</a><sup>2</sup></span>
-          </div>
+      <!-- Paper title -->
+      <h1 class="title is-2 publication-title">
+        SkipGS: Post-Densification Backward Skipping<br>for Efficient 3DGS Training
+      </h1>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>TODO: Institution One,</span>
-            <span class="author-block"><sup>2</sup>TODO: Institution Two</span>
-          </div>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">TODO: Venue / Year (e.g. NeurIPS 2026)</span>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- Paper PDF -->
-              <span class="link-block">
-                <a href="TODO_paper.pdf" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <!-- arXiv -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/TODO" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="ai ai-arxiv"></i></span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Code -->
-              <span class="link-block">
-                <a href="https://github.com/TODO/TODO" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fab fa-github"></i></span>
-                  <span>Code</span>
-                </a>
-              </span>
-              <!-- Video -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=TODO" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fab fa-youtube"></i></span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Data -->
-              <span class="link-block">
-                <a href="TODO" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="far fa-images"></i></span>
-                  <span>Data</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
+      <!-- Authors — fill in before launch -->
+      <div class="is-size-5 mt-4" style="color: #333;">
+        <span style="margin: 0 0.4rem;">Author One</span>·
+        <span style="margin: 0 0.4rem;">Author Two</span>·
+        <span style="margin: 0 0.4rem;">Author Three</span>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- Teaser image / video -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: replace with a teaser figure or short looping video -->
-      <img src="static/images/teaser.png" alt="Teaser figure">
-      <h2 class="subtitle has-text-centered">
-        TODO: one-sentence caption summarizing the method / key result.
-      </h2>
-    </div>
-  </div>
-</section>
-
-<!-- Abstract -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            TODO: paste the paper abstract here.
-          </p>
-        </div>
+      <!-- Affiliations -->
+      <div class="is-size-6 mt-2" style="color: #777;">
+        Institution Name
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- Video -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Video</h2>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="publication-video">
-          <!-- TODO: replace VIDEO_ID with a YouTube embed id -->
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+      <!-- Venue -->
+      <div class="mt-3">
+        <span class="venue-tag">TODO: Venue / Year</span>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- Method -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Method</h2>
-    <div class="columns is-centered">
-      <div class="column is-five-fifths">
-        <img src="static/images/pipeline.png" alt="Method overview">
-        <p class="content has-text-justified" style="margin-top: 1rem;">
-          TODO: short description of the method / pipeline figure above.
-        </p>
+      <!-- Buttons (greyed out until links are ready) -->
+      <div class="mt-5" style="display:flex; flex-wrap:wrap; justify-content:center;">
+        <span class="link-block">
+          <a class="button is-normal is-rounded is-dark">
+            <span class="icon"><i class="fas fa-file-pdf"></i></span>
+            <span>Paper</span>
+          </a>
+        </span>
+        <span class="link-block">
+          <a class="button is-normal is-rounded is-dark">
+            <span class="icon"><i class="fab fa-github"></i></span>
+            <span>Code</span>
+          </a>
+        </span>
+        <span class="link-block">
+          <a class="button is-normal is-rounded is-dark">
+            <span class="icon"><i class="fab fa-youtube"></i></span>
+            <span>Video</span>
+          </a>
+        </span>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- Results comparison -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Results</h2>
-    <div class="columns is-centered">
-      <div class="column is-five-fifths">
-        <!-- TODO: replace with result figures / comparison grid / before-after slider -->
-        <img src="static/images/results.png" alt="Results comparison">
+      <!-- Coming Soon -->
+      <div>
+        <span class="coming-soon-badge">&#9200;&nbsp; Coming Soon</span>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- BibTeX -->
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>TODO: paste BibTeX entry here
-@article{TODOkey,
-  title   = {TODO: Paper Title},
-  author  = {TODO: Author One and Author Two and Author Three},
-  journal = {TODO: Venue},
-  year    = {2026}
-}</code></pre>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <p>
-        This page is built on the
-        <a href="https://github.com/nerfies/nerfies.github.io">Nerfies project page</a> template,
-        used widely by academic project pages. Feel free to reuse and modify.
-      </p>
-    </div>
+<footer class="footer py-4">
+  <div class="container has-text-centered">
+    <p>Website template adapted from <a href="https://github.com/nerfies/nerfies.github.io" style="color:#aaa;">Nerfies</a>.</p>
   </div>
 </footer>
 
