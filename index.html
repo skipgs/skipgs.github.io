@@ -31,7 +31,7 @@
       border: 1px solid #dbdbdb;
       border-radius: 4px;
       padding: 0.2rem 0.75rem;
-      font-size: 0.95rem;
+      font-size: 1rem;
       color: #555;
       margin-top: 0.5rem;
     }
@@ -43,14 +43,33 @@
       cursor: default;
       pointer-events: none;
     }
+    .lab-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2rem;
+      margin-top: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .lab-links a {
+      color: #8C1D40;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: opacity 0.15s;
+    }
+    .lab-links a:hover { opacity: 0.75; }
     .coming-soon-badge {
       display: inline-block;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: #fff;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-weight: 600;
       letter-spacing: 0.12em;
-      padding: 0.55rem 2rem;
+      padding: 0.65rem 2.5rem;
       border-radius: 2rem;
       margin-top: 2.5rem;
     }
@@ -71,29 +90,40 @@
     <div class="container is-max-desktop has-text-centered" style="padding-top: 4rem; padding-bottom: 3rem;">
 
       <!-- Paper title -->
-      <h1 class="title is-2 publication-title">
+      <h1 class="title is-1 publication-title">
         SkipGS: Post-Densification Backward Skipping<br>for Efficient 3DGS Training
       </h1>
 
-      <!-- Authors — fill in before launch -->
-      <div class="is-size-5 mt-4" style="color: #333;">
-        <span style="margin: 0 0.4rem;">Author One</span>·
-        <span style="margin: 0 0.4rem;">Author Two</span>·
-        <span style="margin: 0 0.4rem;">Author Three</span>
+      <!-- Authors -->
+      <div class="is-size-4 mt-5" style="color: #333;">
+        <span style="margin: 0 0.5rem;">Author One</span>·
+        <span style="margin: 0 0.5rem;">Author Two</span>·
+        <span style="margin: 0 0.5rem;">Author Three</span>
       </div>
 
-      <!-- Affiliations -->
-      <div class="is-size-6 mt-2" style="color: #777;">
-        ESIC Lab, Arizona State University
+      <!-- Affiliation -->
+      <div class="is-size-5 mt-3" style="color: #555; font-weight: 500;">
+        ESIC Lab &nbsp;·&nbsp; Arizona State University
       </div>
 
-      <!-- Institution logo -->
+      <!-- Lab links -->
+      <div class="lab-links">
+        <a href="https://faculty.engineering.asu.edu/dfan/" target="_blank">
+          <i class="fas fa-flask"></i> ESIC Lab
+        </a>
+        <span style="color:#ccc;">|</span>
+        <a href="https://github.com/ASU-ESIC-FAN-Lab" target="_blank">
+          <i class="fab fa-github"></i> ASU-ESIC-FAN-Lab
+        </a>
+      </div>
+
+      <!-- ASU logo -->
       <div class="mt-4">
-        <img src="static/images/asu_logo.png" alt="Arizona State University" style="height: 48px;">
+        <img src="static/images/asu_logo.png" alt="Arizona State University" style="height: 72px;">
       </div>
 
       <!-- Venue -->
-      <div class="mt-3">
+      <div class="mt-4">
         <span class="venue-tag">TODO: Venue / Year</span>
       </div>
 
